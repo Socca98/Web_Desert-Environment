@@ -1,0 +1,175 @@
+<html lang="ro">
+<title>Deserturile Tropicale</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            background-color: #ffb366;
+        }
+
+        /* HEADER */
+        #header h1 {
+            position: static;
+            max-height: 20%;
+            border-radius: 2px;
+            color: white;
+            font-family: PT Serif;
+        }
+
+        /* TABURI CU SITE-URI */
+        #navbar {
+            text-align: center;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+
+        #navbar ul {
+            min-height: initial;
+            max-height: initial;
+            margin: 0;
+            list-style-type: none;
+            background-color: #ffbf80;
+            border-radius: 7px;
+        }
+
+        #navbar ul li {
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        /*NAVBAR BUTOANE */
+        #navbar ul li a {
+            padding: .3em 2.75em;
+            color: white;
+            font-family: Arial Rounded MT Bold;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: white;
+            background-color: #ffb366;
+
+        }
+
+        /* POZELE DIN SLIDESHOW */
+        .mySlides {
+            position: static;
+            height: 70%;
+            width: 80%;
+            min-height: 65%;
+            min-width: 80%;
+            border-radius: 2px; /*COLTURI FRUMOASE */
+        }
+
+        #footer {
+            margin-top: 4%;
+            color: white;
+            font-family: Arial Rounded MT Bold;
+        }
+
+    </style>
+    <title>Main-Page</title>
+</head>
+
+<body>
+
+<div id="header">
+    <center>
+        <h1>
+            Desertul Tropical
+        </h1>
+    </center>
+
+</div>
+
+
+<div id="navbar">
+    <ul>
+        <li><a href="Tipuri/Tipuri.html"> Definire </a></li>
+        <li><a href="Flora.html"> Flora </a></li>
+        <li><a href="Fauna.html"> Fauna </a></li>
+        <li><a href="Supravietuire.html"> Supravietuire </a></li>
+        <li><a href="Oaze.html"> Oaze </a></li>
+        <!-- <li> <a href="Dubai/Dubai.html"> Dubai </a> </li> -->
+
+    </ul>
+</div>
+
+
+<div class="w3-content w3-display-container">
+    <center>
+        <a href="Tipuri/Tipuri.html">
+            <img class="mySlides w3-animate-fading" src="../assets/images/slideshow/Tipuri.jpg" alt="Tipuri">
+        </a>
+
+        <a href="Flora.html">
+            <img class="mySlides w3-animate-fading" src="../assets/images/slideshow/flora.jpg" alt="Flora">
+        </a>
+
+        <a href="Fauna.html">
+            <img class="mySlides w3-animate-fading" src="../assets/images/slideshow/cat%20desert.jpg" alt="Fauna">
+        </a>
+
+        <a href="Supravietuire.html">
+            <img class="mySlides w3-animate-fading" src="../assets/images/slideshow/survival.jpg" alt="Supravietuire">
+        </a>
+
+        <a href="Oaze.html">
+            <img class="mySlides w3-animate-fading" src="../assets/images/slideshow/Oo.jpg" alt="Oaze">
+        </a>
+
+        <!-- <a href="Dubai/Dubai.html">
+        <img class="mySlides w3-animate-fading" src="Dubai.jpg" >
+        </a> -->
+
+    </center>
+
+    <button class="w3-button w3-display-left" onclick="plusDivs(-2)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(0)">&#10095;</button>
+</div>
+
+<script>
+    let myIndex = 0;
+    const is = 0;
+    let timeoutID;
+    const x = document.getElementsByClassName("mySlides");
+    carousel();
+
+    function carousel() {
+        let i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        timeoutID = setTimeout(
+            carousel, 9000
+        );
+    }
+
+    function plusDivs(n) {
+        clearTimeout(timeoutID);
+        myIndex += n;
+        if (myIndex < 0) {
+            myIndex = x.length - 1;
+        }
+        carousel();
+    }
+
+</script>
+
+<div id="footer">
+    <center>
+    </center>
+</div>
+
+
+</body>
+</html>

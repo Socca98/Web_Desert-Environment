@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<title>Intro - Polare</title>
+
+<style type="text/css">
+
+body
+{
+margin:0;
+font-family:Calibri, sans-serif;
+}
+
+.background-wrap
+{
+position:fixed;
+z-index:-1000;
+width:100%;
+height:100%;
+overflow:hidden;
+top:0;
+left:0;
+}
+
+#video-bg-elem
+{
+position: fixed;
+top: 50%;
+left: 50%;
+min-width:100%;
+min-height: 100%;
+max-width:100%;
+max-height: 100%;
+z-index: -100;
+transform: translateX(-50%) translateY(-50%);
+background-size: cover;
+transition: 1s opacity;
+object-fit: fill;
+}
+
+
+/*SCRISUL PRINCIPAL*/
+.content  {
+position:relative;
+top:20%;
+max-height:50%;
+
+text-align:center;
+z-index:100;
+text-shadow: 1px 1px #000;
+font-size:30px;
+letter-spacing:3px;
+color:#fff;
+}
+
+/*BUTONUL DE INAINTARE*/
+.button {
+    background-color: #ffcc66; 
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.7s;
+    cursor: pointer;
+	font-family: Arial Rounded MT Bold;
+}
+
+.button1 {
+	position:absolute;
+	bottom:0;
+	margin-left:-50px;
+	left:50%;
+	margin-bottom:1%;
+    background-color: #1aa3ff; 
+    border: 2px solid #99d6ff;
+}
+
+.button1:hover {
+	background-color: #001f33;
+	border:2px solid;
+	border-radius:30%;
+    color: white;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="background-wrap">
+	<video id="video-bg-elem" poster="arctic poster.png" preload="auto" autoplay="true" loop muted="true">
+	<source src="Arctic.mp4" type="video/mp4">
+	Video not supported.
+	</video>
+</div>
+
+<div class ="content">
+	<p>Bun venit in Mediul Deserturilor Polare !</p>	
+</div>
+
+<a href="" onclick="return false">
+<button class="button button1">	
+	Inainte	
+</button>
+</a>
+
+
+</body>
+</html>
