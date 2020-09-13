@@ -7,7 +7,7 @@ Used HTML + CSS.
 Made in spring of 2017. 
 
 # App Photos
-<p float="left" align="center">
+<p float="left" >
     <img src="https://i.imgur.com/pQ8I67s.png" width="90%" />
     <hr><img src="https://i.imgur.com/nH2Ua7p.png" width="90%" />
     <hr><img src="https://i.imgur.com/NKlJ59N.png" width="90%" />
