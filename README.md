@@ -1,8 +1,10 @@
 # Web_Desert-Environment
+A static web application with details about the desert climate in romanian language.
+
+Check the app!
 
 https://socca98.github.io/Web_Desert-Environment/
 
-A static web application with details about the desert climate in romanian language.
 
 # Details
 Used HTML + CSS.
